@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年会抽奖系统</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>年会抽奖系统</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept=".xlsx,.xls" />
+            <p class="hint">请上传Excel文件 (第一列为员工姓名)</p>
+        </div>
+
+        <div class="lottery-section">
+            <div id="nameDisplay" class="name-display">准备开始</div>
+            <button id="startBtn" class="start-btn" disabled>开始抽奖</button>
+        </div>
+
+        <div class="winner-section">
+            <h2>中奖名单</h2>
+            <div id="winnerList" class="winner-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
